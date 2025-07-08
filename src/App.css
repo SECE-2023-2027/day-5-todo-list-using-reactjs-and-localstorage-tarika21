@@ -1,0 +1,158 @@
+/* Ensure full-screen pink background */
+html, body {
+  height: 100%;
+  margin: 0;
+  padding: 0;
+  background-color: #f3cbe8; /* soft pink */
+  font-family: Arial, sans-serif;
+}
+
+/* Root element should take full height */
+#root {
+  height: 100%;
+}
+
+/* Center the app */
+.container {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100%;
+}
+
+/* White box card */
+.todo-box {
+  background-color: #ffffff;
+  padding: 30px;
+  border-radius: 20px;
+  width: 90%;
+  max-width: 600px;
+  box-shadow: 0 5px 10px rgba(0, 0, 0, 0.2);
+}
+
+/* Input + Save button section */
+.input-section {
+  display: flex;
+  gap: 10px;
+  margin-bottom: 20px;
+}
+
+.input-section input {
+  flex: 1;
+  padding: 10px;
+  border-radius: 10px;
+  border: none;
+  background-color: #2c2b30;
+  color: white;
+}
+
+.input-section button {
+  background-color: #6d4fa7;
+  color: white;
+  border: none;
+  border-radius: 10px;
+  padding: 10px 15px;
+  cursor: pointer;
+}
+
+/* Your Todo's + delete all button */
+.todo-header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin-bottom: 10px;
+}
+
+.todo-header h3 {
+  margin: 0;
+  color: #333;
+}
+
+.delete-all {
+  background-color: #ff4d4d;
+  color: white;
+  border: none;
+  padding: 6px 10px;
+  border-radius: 50%;
+  cursor: pointer;
+}
+
+/* Todo List Styling */
+.todo-list {
+  list-style: none;
+  padding: 0;
+  margin: 0;
+}
+
+/* Add this if you want TodoItem styling as well */
+.todo-item {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  background-color: #e9cbee;
+  padding: 10px 15px;
+  border-radius: 15px;
+  margin-bottom: 10px;
+}
+
+.left {
+  display: flex;
+  align-items: center;
+  gap: 10px;
+}
+
+.round-checkbox {
+  width: 18px;
+  height: 18px;
+  border-radius: 50%;
+  accent-color: #6d4fa7;
+  cursor: pointer;
+}
+
+.right .icon {
+  margin-left: 10px;
+  padding: 6px 8px;
+  border-radius: 8px;
+  border: none;
+  cursor: pointer;
+}
+
+.right .edit {
+  background-color: #5dade2;
+  color: white;
+}
+
+.right .delete {
+  background-color: #e74c3c;
+  color: white;
+}
+/* Make sure full-screen pink covers everything */
+html, body {
+  height: 100vh;
+  width: 100vw;
+  margin: 0;
+  padding: 0;
+  background-color: #f3cbe8;
+  font-family: Arial, sans-serif;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+/* Root should also fill full screen */
+#root {
+  height: 100%;
+  width: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+/* Container takes full screen too */
+.container {
+  width: 100%;
+  height: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
